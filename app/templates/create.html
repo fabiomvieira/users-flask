@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/create.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Users | Create user</title>
+</head>
+<body>
+    
+    <h1 class="text-center mt-3">Create user</h1>
+
+    <form action="/" method="POST" class="form-group col-12 mb-4">
+        <div class="offset-4 col-8">
+            <label for="name" class="col-6">Name <span style="color: red">*</span></label>
+            <input type="text" name="name" id="name" class="col-6" autocomplete="off">
+        </div>
+        <div class="offset-4 col-8">
+            <label for="age" class="col-6">Age <span style="color: red">*</span></label>
+            <input type="number" name="age" id="age" class="col-6" autocomplete="off">
+        </div>
+        <div class="offset-4 col-8">
+            <label for="email" class="col-6">Email <span style="color: red">*</span></label>
+            <input type="email" name="email" id="email" class="col-6" autocomplete="off">
+        </div>
+        <div class="offset-4 col-8">
+            <label for="phone" class="col-6">Phone <span style="color: red">*</span></label>
+            <input type="number" name="phone" id="phone" class="col-6" autocomplete="off">
+        </div>
+        <div class="offset-4 col-4">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <p class="text-center">
+        <a href="/">Return</a>
+    </p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+</body>
+</html>
